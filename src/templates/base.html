@@ -1,0 +1,199 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<meta name="title" content="EShop">
+
+	<meta name="description" content="hadskjdsah asdkasdjlkjsda asdlkjasdkljadsll asdd lkajsdlka ">
+
+	<meta name="keyword" content="content, content2, content3, content4">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>EShop</title>
+
+	<link rel="stylesheet" href="{% static 'css/plugins/bootstrap.min.css'%}">
+	<link rel="stylesheet" href="{% static 'css/plugins/font-awesome.min.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'css/template.css' %}">
+	<link rel="stylesheet" href="{% static 'css/header.css' %}">
+
+	<script src="{% static 'js/plugins/jquery.min.js' %}"></script>
+	<script src="{% static 'js/plugins/bootstrap.min.js' %}"></script>
+
+</head>
+<body>
+	<!--=====================================
+	TOP
+	======================================-->
+	
+	<div class="container-fluid topBar" id="top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 social" >
+					<ul>
+						{% for result in json_data %}
+						<li>
+							<a href="{{result.url}}" target="_blank">
+								<i class="fa {{result.red}} redSocial {{result.style}}" aria-hidden="true"></i>
+							</a>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 register" >
+					<ul>
+						<li><a href="#modalLogin" data-toggle="modal">Login</a></li>
+						<li>|</li>
+						<li><a href="#modalSignUp" data-toggle="modal">Sign Up</a> </li>
+					</ul>
+				</div>
+			</div>
+		</div>		
+	</div>	
+
+	<!--=====================================
+	HEADER
+	======================================-->
+	
+	<header id="header" class="container-fluid">
+		<div class="container"> 
+			<div class="row" id="header">
+				<!--=====================================
+				LOGO
+				======================================-->
+				
+				<div class="col-lg-3 col-md-3 col-sm-2 col-xs-12" id="logo" >
+					<a href="/ajax/">
+						<img src="{{data.logo.url}}" class="img-responsive">
+					</a>
+				</div>
+
+				<!--=====================================
+				CATEGORIES AND SEARCH
+				======================================-->
+				
+				<div class="col-lg-6 col-md-6 col-sm-8 col-xs-12" id="logo" >
+					<!--======================
+					CATEGORIES BOTON
+					=======================-->
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 backColor" id="btnCategories">
+						<p>CATEGORIES
+							<span class="pull-right">
+								<i class="fa fa-bars" aria-hidden="true"></i
+							></span>
+						</p>
+					</div>
+
+					<!--======================
+					SEARCH
+					=======================-->
+
+					<div class="input-group col-lg-8 col-md-8 col-sm-8 col-xs-12" id="search">
+						<input type="search" name="search" class="form-control" placeholder="Search...">
+						<span class="input-group-btn">
+							<a href="#">
+								<button class="btn btn-default backColor" type="submit">
+									<i class="fa fa-search"></i>
+								</button>
+							</a>
+						</span>
+					</div>
+				</div>
+
+				<!--=====================================
+				SHOPPING CART
+				======================================-->
+
+				<div class="col-lg-3 col-md-3 col-sm-2 col-xs-12" id="cart" >
+					<a href="#">
+						<button class="btn btn-default pull-left backColor">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+						</button>
+					</a>
+
+					<p>Your cart 
+						<span class="quantityCart">( 3 )</span><br> USD $ <span class="totalCart">20</span>
+					</p>
+				</div>
+			</div>
+
+			<!--=====================================
+			CATEGORIES
+			======================================-->
+
+			<div class="col-xs-12 backColor" id="categories" ><!-- col-xs-12 para todos los tamanos aplique total de la pantalla -->
+				<div class="col-lg-2 col-md-3 col-sm- col-xs-12">
+					<h4>
+						<a href="#" class="pixelCategories">Lorem Ipsum</a>
+					</h4>
+					<hr>
+					<ul>
+						<li><a href="#" class="pixelSubCategories"></a></li>
+						<li><a href="#" class="pixelSubCategories">Lorem Ipsum</a></li>
+						<li><a href="#" class="pixelSubCategories">Lorem Ipsum</a></li>
+						<li><a href="#" class="pixelSubCategories">Lorem Ipsum</a></li>
+						<li><a href="#" class="pixelSubCategories">Lorem Ipsum</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-2 col-md-3 col-sm- col-xs-12">
+					<h4>
+						<a href="#" class="pixelCategories">Lorem Ipsum</a>
+					</h4>
+					<hr>
+					<ul>
+						<li><a href="#" class="pixelSubCategories">Lorem Ipsum</a></li>
+						<li><a href="#" class="pixelSubCategories">Lorem Ipsum</a></li>
+						<li><a href="#" class="pixelSubCategories">Lorem Ipsum</a></li>
+						<li><a href="#" class="pixelSubCategories">Lorem Ipsum</a></li>
+						<li><a href="#" class="pixelSubCategories">Lorem Ipsum</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-2 col-md-3 col-sm- col-xs-12">
+					<h4>
+						<a href="#" class="pixelCategories">Lorem Ipsum</a>
+					</h4>
+					<hr>
+					<ul>
+						<li><a href="#" class="pixelSubCategories">Lorem Ipsum</a></li>
+						<li><a href="#" class="pixelSubCategories">Lorem Ipsum</a></li>
+						<li><a href="#" class="pixelSubCategories">Lorem Ipsum</a></li>
+						<li><a href="#" class="pixelSubCategories">Lorem Ipsum</a></li>
+						<li><a href="#" class="pixelSubCategories">Lorem Ipsum</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-2 col-md-3 col-sm- col-xs-12">
+					<h4>
+						<a href="#" class="pixelCategories">Lorem Ipsum</a>
+					</h4>
+					<hr>
+					<ul>
+						<li><a href="#" class="pixelSubCategories">Lorem Ipsum</a></li>
+						<li><a href="#" class="pixelSubCategories">Lorem Ipsum</a></li>
+						<li><a href="#" class="pixelSubCategories">Lorem Ipsum</a></li>
+						<li><a href="#" class="pixelSubCategories">Lorem Ipsum</a></li>
+						<li><a href="#" class="pixelSubCategories">Lorem Ipsum</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+		</div>
+	</header><!-- /header -->
+
+	{% block content %}{% endblock content %}
+	<body>
+		{{template_sett.pk}}
+	</body>
+
+	<script src="{% static 'js/header.js' %}"></script>
+	<script src="{% static 'js/template.js' %}"></script>
+</body>
+</html>

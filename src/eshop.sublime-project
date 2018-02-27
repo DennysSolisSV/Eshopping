@@ -1,0 +1,35 @@
+{
+	"build_systems":
+	[
+		{
+			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+			"name": "Anaconda Python Builder",
+			"selector": "source.python",
+			"shell_cmd": "\"python\" -u \"$file\""
+		}
+	],
+	"folders":
+	[
+		{
+			"path": "."
+		},
+		{
+			"path": "/home/dennyssolis/Documents/django-projects/svideos2"
+		},
+		{
+			"path": "/home/dennyssolis/Documents/django-projects/truckshop/src"
+		},
+		{
+			"path": "/home/dennyssolis/Documents/django-projects/SpringShop/springshop"
+		},
+		{
+			"path": "/home/dennyssolis/Documents/django-projects/eshop2/src"
+		},
+		{
+			"path": "/home/dennyssolis/Documents/django-projects/SpringShop"
+		},
+		{
+			"path": "/home/dennyssolis/Documents/django-projects/WebSite-Django/virginiatruck"
+		}
+	]
+}

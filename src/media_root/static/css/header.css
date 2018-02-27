@@ -1,0 +1,202 @@
+/*=============================================
+TOP
+=============================================*/
+
+#top ul{
+	padding-top:8px;
+}
+
+#top ul li{
+	display:inline;
+	line-height:30px;
+	margin:0px 5px;
+	color:white;
+}
+
+.social ul li a i{
+	font-size:18px;
+	margin:0 1px;
+}
+
+.register ul{
+	text-align: right;
+	font-size:12px;
+}
+
+/*=============================================
+HEADER
+=============================================*/
+
+header #logo img{
+	padding: 20px 60px;
+	padding-left: 0px;
+}
+
+header #btnCategories{
+	margin:20px 0;
+}
+
+header #btnCategories p{
+	line-height:40px;
+	margin-bottom:0px;
+}
+
+header #btnCategories p span{
+	cursor: pointer;
+}
+
+header #search{
+	margin:20px 0;
+}
+
+header #search input{
+	padding:19px;
+	border-radius:0;
+}
+
+header #search button{
+	padding:9px;
+	border:1px solid silver;
+	border-radius:0;
+}
+
+header #cart{
+	margin:20px 0;
+}
+
+header #cart button{
+	padding:9px 15px;
+	border:1px solid silver;
+	border-radius:0;
+}
+
+header #cart p{
+	padding:2px;
+	padding-left:60px;
+	border:1px solid #aaa;
+	font-size:12px;
+}
+
+header #categories{
+	display:none;
+	margin-top:-10px;
+	position: relative;
+	padding-bottom:20px;
+}
+
+header #categories h4{
+	margin-top:20px;
+	margin-bottom:-10px;
+}
+
+header #categories hr{
+	border:1px solid rgba(255,255,255,.3);
+}
+
+
+/*=============================================
+BIG DESKTOP ( 1366px OR MORE)
+=============================================*/
+
+@media (min-width:1200px){
+
+	/*=============================================
+	HEADER
+	=============================================*/
+
+	header #logo img{
+		padding:20px 60px;
+		padding-left:0px;
+	}
+
+	header #cart{
+		padding-left:100px;
+	}
+
+}
+
+/*=============================================
+MEDIUM DESKTOP  1024px
+=============================================*/
+
+@media (max-width:1199px) and (min-width:992px){
+
+	/*=============================================
+	HEADER
+	=============================================*/
+
+	header #logo img{
+		padding:25px 60px;
+		padding-left:0px;
+	}
+
+	header #cart{
+		padding-left:70px;
+	}
+
+}
+
+/*=============================================
+SMALL DESKTOP (SM  768px)
+=============================================*/
+
+@media (max-width:991px) and (min-width:768px){
+
+	/*=============================================
+	HEADER
+	=============================================*/
+
+	header #logo img{
+		padding:30px 0px;
+	}
+
+	header #cart{
+		padding-left:55px;
+	}
+
+	header #cart p{
+		display:none;
+	}
+
+}
+
+/*=============================================
+MOVIL (XS  320px)
+=============================================*/
+
+@media (max-width:767px){
+
+	/*=============================================
+	TOP
+	=============================================*/
+
+	#top ul{
+		text-align: center;
+	}
+
+	#top #register{
+		border-top:1px solid #222;
+	}
+	
+	/*=============================================
+	HEADER
+	=============================================*/
+
+	header #logo img{
+		padding:30px;
+		padding-bottom:10px;
+	}
+
+	header #categories{
+		margin-bottom:10px;
+	}
+
+	header #search{
+		margin-bottom:10px;
+	}
+
+	header #cart{
+		margin:0px;
+	}
+	
+}
