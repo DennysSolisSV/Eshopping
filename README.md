@@ -1,0 +1,2 @@
+# Eshopping
+Python, Django, Bootstrap
